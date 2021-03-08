@@ -251,7 +251,7 @@ Lessons learnt:
 2. Should try all the possible models on the baseline data so that I can get a brief idea of each models capabilities on the Dataset
 
 Below, catboost has been tried and it gives a eval auc of 0.81, when finetuned/stacked or ensembled could result in better auc
-'''
+
 
 from catboost import CatBoostClassifier, Pool
 
@@ -276,3 +276,4 @@ cat_feat = ["CC", "RC", "Acc_Type", "Reco_Ins_Type", "Is_Spouse",
                         "Hth_Ind", "Hold_Pol_Type", "Reco_Pol_Cat", "Gen_CAT"]
 cb_1 = catboost_model(train, cat_feat)
 cb_1
+'''
